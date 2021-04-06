@@ -25,6 +25,13 @@ void alocAndInitNode(struct Node** _node){
 
 }
 
+void freeNode(struct Node** _node){
+
+    //acredito que eu estou desalocando o nó aqui
+    free(*_node);
+
+}
+
 void printNode(struct Node* _node){
 
     printf("%d", _node->_value);
@@ -38,6 +45,7 @@ int main(void){
     struct Node* a;
     alocAndInitNode(&a);
     printNode(a);
+    freeNode(&a);
 
     return 0;
 
