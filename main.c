@@ -12,8 +12,10 @@ int main(void){
     addNode(&L, 2);
     addNode(&L, 3);
     printList(L);
+    removeNode(&L, 3);
+    removeNode(&L, 3);
+    printList(L);
     
-
     return 0;
 
 }
