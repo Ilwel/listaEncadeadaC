@@ -1,14 +1,18 @@
 #include <stdio.h>
 #include "node.h"
+#include "list.h"
 //main tests
 
 int main(void){
     
-    //simple node test
-    struct Node* a;
-    alocAndInitNode(&a);
-    printNode(a);
-    freeNode(&a);
+    //tests
+    struct List L;
+    initList(&L);
+    addNode(&L, 1);
+    addNode(&L, 2);
+    addNode(&L, 3);
+    printList(L);
+    
 
     return 0;
 

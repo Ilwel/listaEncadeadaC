@@ -30,6 +30,6 @@ void freeNode(struct Node** _node){
 void printNode(struct Node* _node){
     //printing value on the console
     
-    printf("%d", _node->_value);
+    printf("%d\n", _node->_value);
 
 }
